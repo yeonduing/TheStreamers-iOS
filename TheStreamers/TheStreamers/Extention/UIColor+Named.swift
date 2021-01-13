@@ -11,6 +11,7 @@ extension UIColor {
     
     enum NamedColor {
         case background
+        case main
         case title
         case gray1
         case gray2
@@ -20,6 +21,8 @@ extension UIColor {
         switch name {
         case .background:
             return UIColor(named: "Background")
+        case .main:
+            return UIColor(named: "Main")
         case .title:
             return UIColor(named: "Title")
         case .gray1:
