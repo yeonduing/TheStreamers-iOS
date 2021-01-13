@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3C11C4D58D5E96B8729FCCBE /* Pods_TheStreamers_TheStreamersUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42275CB837A2B18C50797B77 /* Pods_TheStreamers_TheStreamersUITests.framework */; };
 		8433AB3D5FCCB403C124EAB7 /* Pods_TheStreamers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83FD77599CAD3B8014E8EC8E /* Pods_TheStreamers.framework */; };
+		CF868A3525AF875600B1A8D9 /* UserInfoInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF868A3425AF875600B1A8D9 /* UserInfoInputView.swift */; };
 		CFACD1A925AE6EAE0062D001 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFACD1A825AE6EAE0062D001 /* AppDelegate.swift */; };
 		CFACD1AB25AE6EAE0062D001 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFACD1AA25AE6EAE0062D001 /* SceneDelegate.swift */; };
 		CFACD1AD25AE6EAE0062D001 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFACD1AC25AE6EAE0062D001 /* ViewController.swift */; };
@@ -45,6 +46,7 @@
 		5E89DFBF437B6539C19CC68C /* Pods-TheStreamersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheStreamersTests.debug.xcconfig"; path = "Target Support Files/Pods-TheStreamersTests/Pods-TheStreamersTests.debug.xcconfig"; sourceTree = "<group>"; };
 		70BDE3DCB331FCF65F512A9B /* Pods-TheStreamers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheStreamers.release.xcconfig"; path = "Target Support Files/Pods-TheStreamers/Pods-TheStreamers.release.xcconfig"; sourceTree = "<group>"; };
 		83FD77599CAD3B8014E8EC8E /* Pods_TheStreamers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheStreamers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF868A3425AF875600B1A8D9 /* UserInfoInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoInputView.swift; sourceTree = "<group>"; };
 		CFACD1A525AE6EAE0062D001 /* TheStreamers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheStreamers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFACD1A825AE6EAE0062D001 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFACD1AA25AE6EAE0062D001 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +116,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CF868A3225AF870D00B1A8D9 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				CF868A3325AF871800B1A8D9 /* SignIn */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		CF868A3325AF871800B1A8D9 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				CF868A3425AF875600B1A8D9 /* UserInfoInputView.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
 		CFACD19C25AE6EAE0062D001 = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +157,7 @@
 		CFACD1A725AE6EAE0062D001 /* TheStreamers */ = {
 			isa = PBXGroup;
 			children = (
+				CF868A3225AF870D00B1A8D9 /* Scenes */,
 				CFACD1A825AE6EAE0062D001 /* AppDelegate.swift */,
 				CFACD1AA25AE6EAE0062D001 /* SceneDelegate.swift */,
 				CFACD1AC25AE6EAE0062D001 /* ViewController.swift */,
@@ -388,6 +407,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF868A3525AF875600B1A8D9 /* UserInfoInputView.swift in Sources */,
 				CFACD1AD25AE6EAE0062D001 /* ViewController.swift in Sources */,
 				CFACD1A925AE6EAE0062D001 /* AppDelegate.swift in Sources */,
 				CFACD1AB25AE6EAE0062D001 /* SceneDelegate.swift in Sources */,
