@@ -1,0 +1,9 @@
+excluded:
+    - Pods
+    - TheStreamersTests
+    - TheStreamersUITests
+disabled_rules:
+    - trailing_whitespace
+    - identifier_name
+line_length: 
+  ignores_comments: true
