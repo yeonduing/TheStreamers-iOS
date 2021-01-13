@@ -21,7 +21,7 @@ class UserInfoInputView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.translatesAutoresizingMaskIntoConstraints = false
-        self.backgroundColor = UIColor.systemGray2
+        self.backgroundColor = UIColor.appColor(.gray1)
         addSubviews()
     }
     

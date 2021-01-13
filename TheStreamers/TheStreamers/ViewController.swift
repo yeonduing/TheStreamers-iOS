@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let view = UserInfoInputView(frame: .zero)
+        self.view.backgroundColor = UIColor.appColor(.background)
         self.view.addSubview(view)
         let constraints = [
             view.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor, constant: 10),
