@@ -11,7 +11,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let view = UserInfoInputView(frame: .zero)
+        let view = UserInfoInputView(type: .email)
         self.view.backgroundColor = UIColor.appColor(.background)
         self.view.addSubview(view)
         let constraints = [

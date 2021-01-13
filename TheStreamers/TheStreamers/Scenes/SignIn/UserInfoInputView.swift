@@ -9,24 +9,23 @@ import UIKit
 
 class UserInfoInputView: UIView {
     
+    private var type: InputType?
+    
     private lazy var textField: UITextField = {
         let textField = UITextField()
         textField.translatesAutoresizingMaskIntoConstraints = false
-        textField.placeholder = "Title *"
+        textField.placeholder = type?.placeholder()
         textField.font = UIFont.systemFont(ofSize: 16)
         textField.borderStyle = .none
         return textField
     }()
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+    convenience init(type: InputType) {
+        self.init(frame: .zero)
+        self.type = type
         self.translatesAutoresizingMaskIntoConstraints = false
         self.backgroundColor = UIColor.appColor(.gray1)
         addSubviews()
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
     }
     
     private func addSubviews() {
@@ -37,5 +36,28 @@ class UserInfoInputView: UIView {
             textField.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 10),
             textField.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor, constant: -10)
         ])
+    }
+    
+    enum InputType {
+        case email
+        case code
+        case password
+        case checkPassword
+        case userName
+        
+        func placeholder() -> String {
+            switch self {
+            case .email:
+                return "Email - has to be unique"
+            case .code:
+                return "Code"
+            case .password:
+                return "Password"
+            case .checkPassword:
+                return "Check Password "
+            case .userName:
+                return "Username"
+            }
+        }
     }
 }
