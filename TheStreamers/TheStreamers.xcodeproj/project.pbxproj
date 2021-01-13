@@ -12,6 +12,7 @@
 		CF868A3525AF875600B1A8D9 /* UserInfoInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF868A3425AF875600B1A8D9 /* UserInfoInputView.swift */; };
 		CF868A3E25AFA10900B1A8D9 /* UIColor+Named.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF868A3D25AFA10900B1A8D9 /* UIColor+Named.swift */; };
 		CF868A4325AFBC0800B1A8D9 /* UserInfoInputStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF868A4225AFBC0800B1A8D9 /* UserInfoInputStackView.swift */; };
+		CF868A5025AFBEED00B1A8D9 /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF868A4F25AFBEED00B1A8D9 /* MainButton.swift */; };
 		CFACD1A925AE6EAE0062D001 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFACD1A825AE6EAE0062D001 /* AppDelegate.swift */; };
 		CFACD1AB25AE6EAE0062D001 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFACD1AA25AE6EAE0062D001 /* SceneDelegate.swift */; };
 		CFACD1AD25AE6EAE0062D001 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFACD1AC25AE6EAE0062D001 /* ViewController.swift */; };
@@ -51,6 +52,7 @@
 		CF868A3425AF875600B1A8D9 /* UserInfoInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoInputView.swift; sourceTree = "<group>"; };
 		CF868A3D25AFA10900B1A8D9 /* UIColor+Named.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Named.swift"; sourceTree = "<group>"; };
 		CF868A4225AFBC0800B1A8D9 /* UserInfoInputStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoInputStackView.swift; sourceTree = "<group>"; };
+		CF868A4F25AFBEED00B1A8D9 /* MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
 		CFACD1A525AE6EAE0062D001 /* TheStreamers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheStreamers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFACD1A825AE6EAE0062D001 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFACD1AA25AE6EAE0062D001 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 		CF868A4E25AFBEAE00B1A8D9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CF868A4F25AFBEED00B1A8D9 /* MainButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -439,6 +442,7 @@
 			files = (
 				CF868A3525AF875600B1A8D9 /* UserInfoInputView.swift in Sources */,
 				CF868A4325AFBC0800B1A8D9 /* UserInfoInputStackView.swift in Sources */,
+				CF868A5025AFBEED00B1A8D9 /* MainButton.swift in Sources */,
 				CFACD1AD25AE6EAE0062D001 /* ViewController.swift in Sources */,
 				CFACD1A925AE6EAE0062D001 /* AppDelegate.swift in Sources */,
 				CFACD1AB25AE6EAE0062D001 /* SceneDelegate.swift in Sources */,

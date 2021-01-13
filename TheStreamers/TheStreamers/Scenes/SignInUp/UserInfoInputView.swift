@@ -24,16 +24,9 @@ class UserInfoInputView: UIView {
         guard type == InputType.email || type == InputType.code else {
             return nil
         }
-        let button = UIButton()
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.layer.cornerRadius = 20
-        button.layer.masksToBounds = true
-        button.backgroundColor = UIColor.appColor(.main)
+        let button = MainButton()
         button.setTitle(type?.buttonTitle(), for: .normal)
-        button.titleLabel?.textColor = UIColor.white
-        button.titleLabel?.numberOfLines = 1
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 14)
-        button.titleLabel?.lineBreakMode = .byClipping
         button.contentEdgeInsets =  UIEdgeInsets(top: 12, left: 14, bottom: 12, right: 14)
         return button
     }()
