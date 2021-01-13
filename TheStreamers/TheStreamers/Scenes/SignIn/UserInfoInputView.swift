@@ -45,6 +45,10 @@ class UserInfoInputView: UIView {
         addSubviews()
     }
     
+}
+
+extension UserInfoInputView {
+    
     private func configure() {
         self.translatesAutoresizingMaskIntoConstraints = false
         self.backgroundColor = UIColor.appColor(.gray1)
@@ -59,9 +63,14 @@ class UserInfoInputView: UIView {
             textField.centerYAnchor.constraint(equalTo: self.safeAreaLayoutGuide.centerYAnchor)
 
         ]
+        constraints.append(contentsOf: addSubViewButton())
+        NSLayoutConstraint.activate(constraints)
+    }
+    
+    private func addSubViewButton() -> [NSLayoutConstraint] {
         if let button = self.button {
             self.addSubview(button)
-            constraints.append(contentsOf: [
+            return [
                 button.leadingAnchor.constraint(equalTo: textField.safeAreaLayoutGuide.trailingAnchor,
                                                 constant: 10),
                 button.trailingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.trailingAnchor,
@@ -70,15 +79,16 @@ class UserInfoInputView: UIView {
                                             constant: 5),
                 button.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor,
                                             constant: -5)
-            ])
+            ]
         } else {
-            constraints.append(
-                textField.trailingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.trailingAnchor,
-                                                    constant: -20)
-            )
+            return [textField.trailingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.trailingAnchor,
+                                                    constant: -20)]
         }
-        NSLayoutConstraint.activate(constraints)
     }
+    
+}
+
+extension UserInfoInputView {
     
     enum InputType {
         case email
@@ -113,4 +123,5 @@ class UserInfoInputView: UIView {
             }
         }
     }
+    
 }
