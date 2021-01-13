@@ -32,7 +32,7 @@ class UserInfoInputView: UIView {
         button.setTitle(type?.buttonTitle(), for: .normal)
         button.titleLabel?.textColor = UIColor.white
         button.titleLabel?.numberOfLines = 1
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 14)
+        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 14)
         button.titleLabel?.lineBreakMode = .byClipping
         button.contentEdgeInsets =  UIEdgeInsets(top: 12, left: 14, bottom: 12, right: 14)
         return button
@@ -91,11 +91,8 @@ extension UserInfoInputView {
 extension UserInfoInputView {
     
     enum InputType {
-        case email
-        case code
-        case password
-        case checkPassword
-        case userName
+        case email, code
+        case password, checkPassword, userName
         
         func placeholder() -> String {
             switch self {
