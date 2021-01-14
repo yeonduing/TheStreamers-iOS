@@ -16,7 +16,7 @@ class MainButton: UIButton {
     
     private func configure() {
         self.translatesAutoresizingMaskIntoConstraints = false
-        self.layer.cornerRadius = 20
+        self.layer.cornerRadius = UserInfoInputCellView.height / 2
         self.layer.masksToBounds = true
         self.backgroundColor = UIColor.appColor(.main)
         self.titleLabel?.textColor = UIColor.white

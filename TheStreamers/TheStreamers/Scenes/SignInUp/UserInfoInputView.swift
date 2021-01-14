@@ -10,6 +10,15 @@ import UIKit
 class UserInfoInputView: UIView {
     
     private var type: InputType?
+    lazy var height: CGFloat = {
+        guard let type = type else { return 0 }
+        switch type {
+        case .signIn:
+            return UserInfoInputCellView.height * 3 + 21 + 48
+        case .signUp:
+            return UserInfoInputCellView.height * 6 + 21 * 4 + 48
+        }
+    }()
     
     private lazy var stackView: UserInfoInputStackView = {
         UserInfoInputStackView(type: type ?? .signIn)
@@ -19,7 +28,7 @@ class UserInfoInputView: UIView {
         let button = MainButton()
         button.setTitle(type?.placeholder(), for: .normal)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
-        button.heightAnchor.constraint(equalToConstant: 49).isActive = true
+        button.heightAnchor.constraint(equalToConstant: UserInfoInputCellView.height).isActive = true
         return button
     }()
     

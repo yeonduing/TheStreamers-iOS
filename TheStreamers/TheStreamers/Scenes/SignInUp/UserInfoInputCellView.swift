@@ -10,6 +10,10 @@ import UIKit
 class UserInfoInputCellView: UIView {
     
     private var type: InputType?
+    static var height: CGFloat {
+        let value = UIScreen.main.bounds.height * 49 / 649
+        return value >= 49 ? 49 : value
+    }
     
     private lazy var textField: UITextField = {
         let textField = UITextField()
@@ -27,12 +31,12 @@ class UserInfoInputCellView: UIView {
         let button = MainButton()
         button.setTitle(type?.buttonTitle(), for: .normal)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 14)
-        button.contentEdgeInsets =  UIEdgeInsets(top: 12, left: 14, bottom: 12, right: 14)
+        button.layer.cornerRadius =  UserInfoInputCellView.height / 2 - 5
         return button
     }()
     
     convenience init(type: InputType) {
-        self.init(frame: .zero)
+        self.init()
         self.type = type
         configure()
         addSubviews()
@@ -45,9 +49,9 @@ extension UserInfoInputCellView {
     private func configure() {
         self.translatesAutoresizingMaskIntoConstraints = false
         self.backgroundColor = UIColor.appColor(.gray1)
-        self.layer.cornerRadius = 25
+        self.layer.cornerRadius =  UserInfoInputCellView.height / 2
         self.layer.masksToBounds = true
-        self.heightAnchor.constraint(equalToConstant: 49).isActive = true
+        self.heightAnchor.constraint(equalToConstant: UserInfoInputCellView.height).isActive = true
     }
     
     private func addSubviews() {

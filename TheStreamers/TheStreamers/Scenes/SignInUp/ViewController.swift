@@ -18,9 +18,22 @@ class ViewController: UIViewController {
     private lazy var userInfoInputView: UserInfoInputView = {
         UserInfoInputView(type: .signIn)
     }()
+    
+    private lazy var forgotPasswordButton: UIButton = {
+        let button = UIButton(frame: .zero)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.setTitle("Forgot Password?", for: .normal)
+        button.setTitleColor(UIColor.appColor(.title), for: .normal)
+        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 14)
+        return button
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func loadView() {
+        super.loadView()
         configure()
         addSubviews()
     }
@@ -36,16 +49,23 @@ extension ViewController {
     private func addSubviews() {
         view.addSubview(logoImageView)
         view.addSubview(userInfoInputView)
+        view.addSubview(forgotPasswordButton)
+        
         NSLayoutConstraint.activate([
             logoImageView.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor),
-            logoImageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor,
-                                                   constant: 180),
+            
+            userInfoInputView.topAnchor.constraint(equalTo: logoImageView.safeAreaLayoutGuide.bottomAnchor,
+                                                  constant: 56.8),
             userInfoInputView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor,
                                                        constant: 20),
             userInfoInputView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor,
                                                         constant: -20),
-            userInfoInputView.topAnchor.constraint(equalTo: logoImageView.bottomAnchor,
-                                                   constant: 56.8)
+            userInfoInputView.heightAnchor.constraint(equalToConstant: userInfoInputView.height),
+            userInfoInputView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            
+            forgotPasswordButton.topAnchor.constraint(equalTo: userInfoInputView.safeAreaLayoutGuide.bottomAnchor,
+                                                      constant: 16),
+            forgotPasswordButton.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         ])
     }
     

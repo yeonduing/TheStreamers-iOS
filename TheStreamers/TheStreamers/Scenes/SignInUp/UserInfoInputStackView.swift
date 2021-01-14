@@ -12,7 +12,7 @@ class UserInfoInputStackView: UIStackView {
     private var type: ViewType?
     
     convenience init(type: ViewType) {
-        self.init(frame: .zero)
+        self.init()
         self.type = type
         configure()
         addSubviews()
@@ -50,7 +50,8 @@ extension UserInfoInputStackView {
         case .signIn:
             return [InputType.email, InputType.password]
         case .signUp:
-            return [InputType.emailForSignUp, InputType.code, InputType.userName, InputType.password, InputType.checkPassword]
+            return [InputType.emailForSignUp, InputType.code,
+                    InputType.userName, InputType.password, InputType.checkPassword]
         }
     }
     
