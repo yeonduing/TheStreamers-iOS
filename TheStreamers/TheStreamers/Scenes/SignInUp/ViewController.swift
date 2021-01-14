@@ -10,11 +10,13 @@ import UIKit
 class ViewController: UIViewController {
     
     private lazy var logoImageView: UIImageView = {
-        UIImageView(image: UIImage(named: "logo-large"))
+        let imageView = UIImageView(image: UIImage(named: "largeLogo"))
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        return imageView
     }()
     
     private lazy var userInfoInputView: UserInfoInputView = {
-        UserInfoInputView(type: .signUp)
+        UserInfoInputView(type: .signIn)
     }()
 
     override func viewDidLoad() {
@@ -32,14 +34,18 @@ extension ViewController {
     }
     
     private func addSubviews() {
+        view.addSubview(logoImageView)
         view.addSubview(userInfoInputView)
         NSLayoutConstraint.activate([
+            logoImageView.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor),
+            logoImageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor,
+                                                   constant: 180),
             userInfoInputView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor,
                                                        constant: 20),
             userInfoInputView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor,
                                                         constant: -20),
-            userInfoInputView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor,
-                                                   constant: 20)
+            userInfoInputView.topAnchor.constraint(equalTo: logoImageView.bottomAnchor,
+                                                   constant: 56.8)
         ])
     }
     
