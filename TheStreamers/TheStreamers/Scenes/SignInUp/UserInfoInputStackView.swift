@@ -9,9 +9,9 @@ import UIKit
 
 class UserInfoInputStackView: UIStackView {
     
-    private var type: InputType?
+    private var type: ViewType?
     
-    convenience init(type: InputType) {
+    convenience init(type: ViewType) {
         self.init(frame: .zero)
         self.type = type
         configure()
@@ -31,8 +31,8 @@ extension UserInfoInputStackView {
     }
     
     private func addSubviews() {
-        type?.allCases().forEach {
-            let view = UserInfoInputView(type: $0)
+        allCases().forEach {
+            let view = UserInfoInputCellView(type: $0)
             self.addArrangedSubview(view)
         }
     }
@@ -41,17 +41,16 @@ extension UserInfoInputStackView {
 
 extension UserInfoInputStackView {
     
-    enum InputType {
-        case signIn, signUp
-        
-        func allCases() -> [UserInfoInputView.InputType] {
-            typealias Type = UserInfoInputView.InputType
-            switch self {
-            case .signIn:
-                return [Type.email, Type.password]
-            case .signUp:
-                return [Type.emailForSignUp, Type.code, Type.userName, Type.password, Type.checkPassword]
-            }
+    typealias InputType = UserInfoInputCellView.InputType
+    typealias ViewType = UserInfoInputView.InputType
+    
+    private func allCases() -> [InputType] {
+        guard let type = type else { return [] }
+        switch type {
+        case .signIn:
+            return [InputType.email, InputType.password]
+        case .signUp:
+            return [InputType.emailForSignUp, InputType.code, InputType.userName, InputType.password, InputType.checkPassword]
         }
     }
     
