@@ -22,6 +22,8 @@
 		CFACD1C025AE6EB00062D001 /* TheStreamersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFACD1BF25AE6EB00062D001 /* TheStreamersTests.swift */; };
 		CFACD1CB25AE6EB00062D001 /* TheStreamersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFACD1CA25AE6EB00062D001 /* TheStreamersUITests.swift */; };
 		CFF87D9725B0219500B8BADB /* UserInfoInputCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF87D9625B0219500B8BADB /* UserInfoInputCellView.swift */; };
+		CFF87D9C25B0CD9500B8BADB /* TextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF87D9B25B0CD9500B8BADB /* TextButton.swift */; };
+		CFF87DA125B0CEE000B8BADB /* TextButtonStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF87DA025B0CEE000B8BADB /* TextButtonStackView.swift */; };
 		F13DCCF7FF6D72FCCA9759EC /* Pods_TheStreamersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27C964E14555AA87274519DC /* Pods_TheStreamersTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +71,8 @@
 		CFACD1CA25AE6EB00062D001 /* TheStreamersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheStreamersUITests.swift; sourceTree = "<group>"; };
 		CFACD1CC25AE6EB00062D001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFF87D9625B0219500B8BADB /* UserInfoInputCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoInputCellView.swift; sourceTree = "<group>"; };
+		CFF87D9B25B0CD9500B8BADB /* TextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextButton.swift; sourceTree = "<group>"; };
+		CFF87DA025B0CEE000B8BADB /* TextButtonStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextButtonStackView.swift; sourceTree = "<group>"; };
 		D76B86724FFCF7347891D5C3 /* Pods-TheStreamers-TheStreamersUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheStreamers-TheStreamersUITests.release.xcconfig"; path = "Target Support Files/Pods-TheStreamers-TheStreamersUITests/Pods-TheStreamers-TheStreamersUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DBA187F74F152295524166FE /* Pods-TheStreamers-TheStreamersUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheStreamers-TheStreamersUITests.debug.xcconfig"; path = "Target Support Files/Pods-TheStreamers-TheStreamersUITests/Pods-TheStreamers-TheStreamersUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -139,6 +143,7 @@
 				CF868A3425AF875600B1A8D9 /* UserInfoInputView.swift */,
 				CF868A4225AFBC0800B1A8D9 /* UserInfoInputStackView.swift */,
 				CFF87D9625B0219500B8BADB /* UserInfoInputCellView.swift */,
+				CFF87DA025B0CEE000B8BADB /* TextButtonStackView.swift */,
 			);
 			path = SignInUp;
 			sourceTree = "<group>";
@@ -163,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				CF868A4F25AFBEED00B1A8D9 /* MainButton.swift */,
+				CFF87D9B25B0CD9500B8BADB /* TextButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -447,8 +453,10 @@
 				CF868A4325AFBC0800B1A8D9 /* UserInfoInputStackView.swift in Sources */,
 				CF868A5025AFBEED00B1A8D9 /* MainButton.swift in Sources */,
 				CFACD1AD25AE6EAE0062D001 /* ViewController.swift in Sources */,
+				CFF87DA125B0CEE000B8BADB /* TextButtonStackView.swift in Sources */,
 				CFF87D9725B0219500B8BADB /* UserInfoInputCellView.swift in Sources */,
 				CFACD1A925AE6EAE0062D001 /* AppDelegate.swift in Sources */,
+				CFF87D9C25B0CD9500B8BADB /* TextButton.swift in Sources */,
 				CFACD1AB25AE6EAE0062D001 /* SceneDelegate.swift in Sources */,
 				CF868A3E25AFA10900B1A8D9 /* UIColor+Named.swift in Sources */,
 			);

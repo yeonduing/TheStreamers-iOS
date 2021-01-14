@@ -20,12 +20,11 @@ class ViewController: UIViewController {
     }()
     
     private lazy var forgotPasswordButton: UIButton = {
-        let button = UIButton(frame: .zero)
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle("Forgot Password?", for: .normal)
-        button.setTitleColor(UIColor.appColor(.title), for: .normal)
-        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 14)
-        return button
+        TextButton(text: "Forgot Password?")
+    }()
+    
+    private lazy var infoButton: TextButtonStackView = {
+        TextButtonStackView(description: "Don’t have any account?", title: "Sign Up")
     }()
 
     override func viewDidLoad() {
@@ -50,6 +49,7 @@ extension ViewController {
         view.addSubview(logoImageView)
         view.addSubview(userInfoInputView)
         view.addSubview(forgotPasswordButton)
+        view.addSubview(infoButton)
         
         NSLayoutConstraint.activate([
             logoImageView.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor),
@@ -65,7 +65,10 @@ extension ViewController {
             
             forgotPasswordButton.topAnchor.constraint(equalTo: userInfoInputView.safeAreaLayoutGuide.bottomAnchor,
                                                       constant: 16),
-            forgotPasswordButton.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+            forgotPasswordButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            
+            infoButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -52),
+            infoButton.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         ])
     }
     
