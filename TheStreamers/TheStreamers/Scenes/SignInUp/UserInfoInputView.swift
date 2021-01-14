@@ -21,7 +21,7 @@ class UserInfoInputView: UIView {
     }()
     
     private lazy var button: UIButton? = {
-        guard type == InputType.email || type == InputType.code else {
+        guard type == InputType.emailForSignUp || type == InputType.code else {
             return nil
         }
         let button = MainButton()
@@ -47,6 +47,7 @@ extension UserInfoInputView {
         self.backgroundColor = UIColor.appColor(.gray1)
         self.layer.cornerRadius = 25
         self.layer.masksToBounds = true
+        self.heightAnchor.constraint(equalToConstant: 49).isActive = true
     }
     
     private func addSubviews() {
@@ -68,6 +69,7 @@ extension UserInfoInputView {
                                                 constant: 10),
                 button.trailingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.trailingAnchor,
                                                  constant: -5),
+                button.widthAnchor.constraint(equalToConstant: 100),
                 button.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor,
                                             constant: 5),
                 button.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor,
@@ -84,15 +86,17 @@ extension UserInfoInputView {
 extension UserInfoInputView {
     
     enum InputType {
-        case email, code
-        case password, checkPassword, userName
+        case emailForSignUp, code
+        case email, password, checkPassword, userName
         
         func placeholder() -> String {
             switch self {
-            case .email:
+            case .emailForSignUp:
                 return "Email - has to be unique"
             case .code:
                 return "Code"
+            case .email:
+                return "Email"
             case .password:
                 return "Password"
             case .checkPassword:
@@ -104,7 +108,7 @@ extension UserInfoInputView {
         
         func buttonTitle() -> String {
             switch self {
-            case .email:
+            case .emailForSignUp:
                 return "Send Code"
             case .code:
                 return "Check Code"
