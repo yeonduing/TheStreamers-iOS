@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		3C11C4D58D5E96B8729FCCBE /* Pods_TheStreamers_TheStreamersUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42275CB837A2B18C50797B77 /* Pods_TheStreamers_TheStreamersUITests.framework */; };
 		8433AB3D5FCCB403C124EAB7 /* Pods_TheStreamers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83FD77599CAD3B8014E8EC8E /* Pods_TheStreamers.framework */; };
+		CF868A3525AF875600B1A8D9 /* UserInfoInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF868A3425AF875600B1A8D9 /* UserInfoInputView.swift */; };
+		CF868A3E25AFA10900B1A8D9 /* UIColor+Named.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF868A3D25AFA10900B1A8D9 /* UIColor+Named.swift */; };
+		CF868A4325AFBC0800B1A8D9 /* UserInfoInputStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF868A4225AFBC0800B1A8D9 /* UserInfoInputStackView.swift */; };
+		CF868A5025AFBEED00B1A8D9 /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF868A4F25AFBEED00B1A8D9 /* MainButton.swift */; };
 		CFACD1A925AE6EAE0062D001 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFACD1A825AE6EAE0062D001 /* AppDelegate.swift */; };
 		CFACD1AB25AE6EAE0062D001 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFACD1AA25AE6EAE0062D001 /* SceneDelegate.swift */; };
 		CFACD1AD25AE6EAE0062D001 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFACD1AC25AE6EAE0062D001 /* ViewController.swift */; };
@@ -17,6 +21,10 @@
 		CFACD1B525AE6EB00062D001 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFACD1B325AE6EB00062D001 /* LaunchScreen.storyboard */; };
 		CFACD1C025AE6EB00062D001 /* TheStreamersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFACD1BF25AE6EB00062D001 /* TheStreamersTests.swift */; };
 		CFACD1CB25AE6EB00062D001 /* TheStreamersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFACD1CA25AE6EB00062D001 /* TheStreamersUITests.swift */; };
+		CFF87D9725B0219500B8BADB /* UserInfoInputCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF87D9625B0219500B8BADB /* UserInfoInputCellView.swift */; };
+		CFF87D9C25B0CD9500B8BADB /* TextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF87D9B25B0CD9500B8BADB /* TextButton.swift */; };
+		CFF87DA125B0CEE000B8BADB /* TextButtonStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF87DA025B0CEE000B8BADB /* TextButtonStackView.swift */; };
+		CFF87DA625B0D44D00B8BADB /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF87DA525B0D44D00B8BADB /* SignUpViewController.swift */; };
 		F13DCCF7FF6D72FCCA9759EC /* Pods_TheStreamersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27C964E14555AA87274519DC /* Pods_TheStreamersTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +53,10 @@
 		5E89DFBF437B6539C19CC68C /* Pods-TheStreamersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheStreamersTests.debug.xcconfig"; path = "Target Support Files/Pods-TheStreamersTests/Pods-TheStreamersTests.debug.xcconfig"; sourceTree = "<group>"; };
 		70BDE3DCB331FCF65F512A9B /* Pods-TheStreamers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheStreamers.release.xcconfig"; path = "Target Support Files/Pods-TheStreamers/Pods-TheStreamers.release.xcconfig"; sourceTree = "<group>"; };
 		83FD77599CAD3B8014E8EC8E /* Pods_TheStreamers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheStreamers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF868A3425AF875600B1A8D9 /* UserInfoInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoInputView.swift; sourceTree = "<group>"; };
+		CF868A3D25AFA10900B1A8D9 /* UIColor+Named.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Named.swift"; sourceTree = "<group>"; };
+		CF868A4225AFBC0800B1A8D9 /* UserInfoInputStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoInputStackView.swift; sourceTree = "<group>"; };
+		CF868A4F25AFBEED00B1A8D9 /* MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
 		CFACD1A525AE6EAE0062D001 /* TheStreamers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheStreamers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFACD1A825AE6EAE0062D001 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFACD1AA25AE6EAE0062D001 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +71,10 @@
 		CFACD1C625AE6EB00062D001 /* TheStreamersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheStreamersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFACD1CA25AE6EB00062D001 /* TheStreamersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheStreamersUITests.swift; sourceTree = "<group>"; };
 		CFACD1CC25AE6EB00062D001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFF87D9625B0219500B8BADB /* UserInfoInputCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoInputCellView.swift; sourceTree = "<group>"; };
+		CFF87D9B25B0CD9500B8BADB /* TextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextButton.swift; sourceTree = "<group>"; };
+		CFF87DA025B0CEE000B8BADB /* TextButtonStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextButtonStackView.swift; sourceTree = "<group>"; };
+		CFF87DA525B0D44D00B8BADB /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		D76B86724FFCF7347891D5C3 /* Pods-TheStreamers-TheStreamersUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheStreamers-TheStreamersUITests.release.xcconfig"; path = "Target Support Files/Pods-TheStreamers-TheStreamersUITests/Pods-TheStreamers-TheStreamersUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DBA187F74F152295524166FE /* Pods-TheStreamers-TheStreamersUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheStreamers-TheStreamersUITests.debug.xcconfig"; path = "Target Support Files/Pods-TheStreamers-TheStreamersUITests/Pods-TheStreamers-TheStreamersUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,6 +130,52 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CF868A3225AF870D00B1A8D9 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				CF868A3325AF871800B1A8D9 /* SignInUp */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		CF868A3325AF871800B1A8D9 /* SignInUp */ = {
+			isa = PBXGroup;
+			children = (
+				CFACD1AC25AE6EAE0062D001 /* ViewController.swift */,
+				CF868A3425AF875600B1A8D9 /* UserInfoInputView.swift */,
+				CF868A4225AFBC0800B1A8D9 /* UserInfoInputStackView.swift */,
+				CFF87D9625B0219500B8BADB /* UserInfoInputCellView.swift */,
+				CFF87DA025B0CEE000B8BADB /* TextButtonStackView.swift */,
+				CFF87DA525B0D44D00B8BADB /* SignUpViewController.swift */,
+			);
+			path = SignInUp;
+			sourceTree = "<group>";
+		};
+		CF868A3C25AFA0FA00B1A8D9 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				CF868A3D25AFA10900B1A8D9 /* UIColor+Named.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		CF868A4A25AFBE9A00B1A8D9 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				CF868A4E25AFBEAE00B1A8D9 /* Views */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		CF868A4E25AFBEAE00B1A8D9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CF868A4F25AFBEED00B1A8D9 /* MainButton.swift */,
+				CFF87D9B25B0CD9500B8BADB /* TextButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		CFACD19C25AE6EAE0062D001 = {
 			isa = PBXGroup;
 			children = (
@@ -139,9 +201,11 @@
 		CFACD1A725AE6EAE0062D001 /* TheStreamers */ = {
 			isa = PBXGroup;
 			children = (
+				CF868A4A25AFBE9A00B1A8D9 /* Commons */,
+				CF868A3C25AFA0FA00B1A8D9 /* Extentions */,
+				CF868A3225AF870D00B1A8D9 /* Scenes */,
 				CFACD1A825AE6EAE0062D001 /* AppDelegate.swift */,
 				CFACD1AA25AE6EAE0062D001 /* SceneDelegate.swift */,
-				CFACD1AC25AE6EAE0062D001 /* ViewController.swift */,
 				CFACD1AE25AE6EAE0062D001 /* Main.storyboard */,
 				CFACD1B125AE6EB00062D001 /* Assets.xcassets */,
 				CFACD1B325AE6EB00062D001 /* LaunchScreen.storyboard */,
@@ -388,9 +452,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFF87DA625B0D44D00B8BADB /* SignUpViewController.swift in Sources */,
+				CF868A3525AF875600B1A8D9 /* UserInfoInputView.swift in Sources */,
+				CF868A4325AFBC0800B1A8D9 /* UserInfoInputStackView.swift in Sources */,
+				CF868A5025AFBEED00B1A8D9 /* MainButton.swift in Sources */,
 				CFACD1AD25AE6EAE0062D001 /* ViewController.swift in Sources */,
+				CFF87DA125B0CEE000B8BADB /* TextButtonStackView.swift in Sources */,
+				CFF87D9725B0219500B8BADB /* UserInfoInputCellView.swift in Sources */,
 				CFACD1A925AE6EAE0062D001 /* AppDelegate.swift in Sources */,
+				CFF87D9C25B0CD9500B8BADB /* TextButton.swift in Sources */,
 				CFACD1AB25AE6EAE0062D001 /* SceneDelegate.swift in Sources */,
+				CF868A3E25AFA10900B1A8D9 /* UIColor+Named.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
